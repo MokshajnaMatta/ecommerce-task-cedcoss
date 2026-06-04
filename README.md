@@ -1,6 +1,6 @@
 # PrimePick Subscription Plan Page
 
-A premium, interactive subscription plans page for the e-commerce brand **PrimePick**. Built using modern front-end standards (HTML5, CSS3, and Vanilla JavaScript), this application features a sleek dark-slate design system, responsive pricing, details comparison, and a secure checkout flow simulation.
+A premium, interactive subscription plans page for the e-commerce brand **PrimePick**. Built using modern front-end standards (HTML5, CSS3, and JavaScript), this application features a sleek dark-slate design system, responsive pricing, details comparison, and a secure checkout flow simulation.
 
 ---
 
@@ -24,8 +24,8 @@ A premium, interactive subscription plans page for the e-commerce brand **PrimeP
 ## 🛠️ Tech Stack & Tools
 
 - **Core Structure**: HTML5 (Semantic elements)
-- **Styling**: Vanilla CSS3 (Custom HSL variables, backdrop-filters for glassmorphism, responsive media queries, CSS Keyframe animations)
-- **Logic**: Vanilla JavaScript ES6 (No external dependencies/libraries to ensure portability)
+- **Styling**: CSS3 (Custom HSL variables, backdrop-filters for glassmorphism, responsive media queries, CSS Keyframe animations)
+- **Logic**: JavaScript ES6 (No external dependencies/libraries to ensure portability)
 - **Typography**: Google Fonts (Inter & Outfit)
 - **Icons**: Hand-drawn inline SVGs for vector crispness and offline availability.
 
