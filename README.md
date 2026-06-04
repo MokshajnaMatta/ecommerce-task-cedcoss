@@ -37,13 +37,13 @@ Since the shell environment does not have Node.js or Python installed, this proj
 
 ### Method 1: Direct File Launch (Easiest)
 1. Navigate to the project directory:
-   `C:\Users\moksh\.gemini\antigravity-ide\scratch\primepick-subscription-page\`
+   `Folder Path`
 2. Double-click the `index.html` file to open it directly in Google Chrome, Microsoft Edge, Mozilla Firefox, or Safari.
 
 ### Method 2: Command Line (Windows PowerShell / CMD)
 If you wish to launch it directly from the command line in Windows:
 ```powershell
-Start-Process "C:\Users\moksh\.gemini\antigravity-ide\scratch\primepick-subscription-page\index.html"
+Start-Process "File Path"
 ```
 
 ### Method 3: Local Server (Optional)
