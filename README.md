@@ -61,5 +61,5 @@ primepick-subscription-page/
 ├── index.html        # Main markup, hero, plans grid, table, & modal
 ├── styles.css        # Premium slate-dark CSS design system & animations
 ├── script.js         # Interactive pricing toggle, validation, & confetti logic
-└── README.md         # Project documentation (this file)
+└── README.md         # Project documentation
 ```
