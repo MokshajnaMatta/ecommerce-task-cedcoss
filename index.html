@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimePick Membership Plans</title>
+  <meta name="description" content="Upgrade to PrimePick membership today! Choose from Basic, Pro, or Premium subscription plans and unlock exclusive perks, free delivery, and premium streaming.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-accent">Prime</span>Pick
+      </div>
+      <nav class="nav-links">
+        <a href="#plans">Plans</a>
+        <a href="#comparison">Compare Features</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="user-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Guest User</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-badge">PrimePick Membership</div>
+      <h1 class="hero-title">Elevate Your Shopping & Entertainment Experience</h1>
+      <p class="hero-subtitle">Unlock unlimited free delivery, exclusive deals, original entertainment, and priority support. Choose the plan that fits your lifestyle.</p>
+      
+      <!-- Billing Toggle -->
+      <div class="billing-toggle-container">
+        <span class="toggle-label active" id="label-monthly">Monthly</span>
+        <button class="toggle-btn" id="billing-toggle" aria-label="Toggle billing frequency">
+          <span class="toggle-slider"></span>
+        </button>
+        <span class="toggle-label" id="label-yearly">
+          Yearly <span class="discount-badge">Save 15%</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans-section" id="plans">
+      <div class="plans-grid">
+        <!-- Basic Plan -->
+        <div class="plan-card" id="plan-basic">
+          <div class="plan-header">
+            <h2 class="plan-name">Basic</h2>
+            <p class="plan-desc">For casual shoppers who want standard perks.</p>
+            <div class="plan-price-container">
+              <span class="currency">₹</span>
+              <span class="plan-price" id="price-basic">0</span>
+              <span class="billing-period" id="period-basic">/ month</span>
+            </div>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Standard delivery (3-5 days)</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Ad-supported streaming & shopping</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Standard customer support</span>
+            </li>
+            <li class="disabled">
+              <svg class="feature-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              <span>Early access to sales & lightning deals</span>
+            </li>
+            <li class="disabled">
+              <svg class="feature-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              <span>PrimePick Video (4K Ultra HD)</span>
+            </li>
+          </ul>
+          <button class="subscribe-btn secondary" id="subscribe-basic">Get Started</button>
+        </div>
+
+        <!-- Pro Plan (Most Popular) -->
+        <div class="plan-card popular" id="plan-pro">
+          <div class="popular-badge">Best Value</div>
+          <div class="plan-header">
+            <h2 class="plan-name">Pro</h2>
+            <p class="plan-desc">Our most popular plan for regular shoppers.</p>
+            <div class="plan-price-container">
+              <span class="currency">₹</span>
+              <span class="plan-price" id="price-pro">99</span>
+              <span class="billing-period" id="period-pro">/ month</span>
+            </div>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Free 2-day delivery on eligible items</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Ad-free shopping experience</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>2-hour early access to sales & deals</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>PrimePick Video (Standard Definition)</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>24/7 Priority chat support</span>
+            </li>
+          </ul>
+          <button class="subscribe-btn" id="subscribe-pro">Subscribe Now</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan-card" id="plan-premium">
+          <div class="plan-header">
+            <h2 class="plan-name">Premium</h2>
+            <p class="plan-desc">For heavy buyers and premium entertainment fans.</p>
+            <div class="plan-price-container">
+              <span class="currency">₹</span>
+              <span class="plan-price" id="price-premium">199</span>
+              <span class="billing-period" id="period-premium">/ month</span>
+            </div>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Free 1-day & Same-day delivery</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Completely ad-free shopping & media</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>PrimePick Video (4K Ultra HD & Dolby)</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Priority 24/7 Phone & chat support</span>
+            </li>
+            <li>
+              <svg class="feature-icon active" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Share plan with up to 4 family members</span>
+            </li>
+          </ul>
+          <button class="subscribe-btn secondary" id="subscribe-premium">Upgrade to Premium</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="comparison-section" id="comparison">
+      <h2 class="section-title">Compare Plan Details</h2>
+      <div class="comparison-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="feature-header">Features</th>
+              <th>Basic</th>
+              <th class="table-popular-col">Pro</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Monthly Price (Monthly Billing)</td>
+              <td>₹0</td>
+              <td class="table-popular-col">₹99</td>
+              <td>₹199</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Monthly Price (Yearly Billing)</td>
+              <td>₹0</td>
+              <td class="table-popular-col">₹84 <span class="discount-pill">15% off</span></td>
+              <td>₹169 <span class="discount-pill">15% off</span></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Delivery Options</td>
+              <td>Standard (3-5 days)</td>
+              <td class="table-popular-col">Free 2-Day Delivery</td>
+              <td>Free 1-Day & Same-Day</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Ad-Free Experience</td>
+              <td><svg class="table-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></td>
+              <td class="table-popular-col"><svg class="table-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+              <td><svg class="table-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Video Streaming Quality</td>
+              <td>None</td>
+              <td class="table-popular-col">Standard (SD)</td>
+              <td>4K Ultra HD & HDR</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Early Access to Sales</td>
+              <td><svg class="table-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></td>
+              <td class="table-popular-col">2 hours early</td>
+              <td>2 hours early + Invite-only sales</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Customer Support</td>
+              <td>Standard web ticket</td>
+              <td class="table-popular-col">24/7 Chat Support</td>
+              <td>Priority 24/7 Phone & Chat</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Family Sharing</td>
+              <td><svg class="table-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></td>
+              <td class="table-popular-col"><svg class="table-cross" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></td>
+              <td>Up to 4 users</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Can I cancel or switch my plan anytime?</h3>
+          <p>Yes, absolutely. You can upgrade, downgrade, or cancel your subscription at any time from your account settings. If you downgrade, your current subscription will remain active until the end of your billing cycle.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What does "Yearly Billing Save 15%" mean?</h3>
+          <p>When you select Yearly billing, you pay for 12 months in advance at a 15% discount compared to pay-as-you-go monthly pricing. It is our most cost-efficient option.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are there any hidden fees or contracts?</h3>
+          <p>No. All our plans are transparent. The price you see is the price you pay, and you can cancel anytime without penalty.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How does the family sharing feature work?</h3>
+          <p>Our Premium plan allows you to invite up to 4 family members living in the same household. Each member gets their own personalized account with all Premium benefits at no extra cost.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Checkout / Confirmation Modal -->
+  <div class="modal-overlay" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-modal" aria-label="Close modal">&times;</button>
+      
+      <!-- Checkout Step -->
+      <div id="checkout-step" class="modal-step active">
+        <h2 id="modal-title" class="modal-heading">Confirm Subscription</h2>
+        <p class="modal-subheading">You are subscribing to the <strong id="selected-plan-name" class="highlight-text">Pro Plan</strong>.</p>
+        
+        <div class="order-summary-box">
+          <div class="summary-row">
+            <span class="summary-label">Plan Level:</span>
+            <span class="summary-value" id="summary-plan">Pro</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Billing Cycle:</span>
+            <span class="summary-value" id="summary-billing">Monthly</span>
+          </div>
+          <div class="summary-row total-row">
+            <span class="summary-label">Amount Due:</span>
+            <span class="summary-value" id="summary-price">₹99/mo</span>
+          </div>
+        </div>
+
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="cardholder-name">Full Name</label>
+            <input type="text" id="cardholder-name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john.doe@example.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group flex-2">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number" placeholder="4111 2222 3333 4444" maxlength="19" required>
+            </div>
+            <div class="form-group">
+              <label for="card-expiry">Expiry Date</label>
+              <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" required>
+            </div>
+            <div class="form-group">
+              <label for="card-cvv">CVV</label>
+              <input type="password" id="card-cvv" placeholder="123" maxlength="3" required>
+            </div>
+          </div>
+          
+          <div class="secure-badge">
+            <svg class="secure-icon" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+            <span>256-Bit SSL Encrypted Secure Checkout</span>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submit-payment">
+            <span class="btn-text">Confirm & Pay</span>
+            <span class="spinner hidden" id="payment-spinner"></span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Success Step -->
+      <div id="success-step" class="modal-step">
+        <div class="success-icon-container">
+          <div class="success-checkmark-circle">
+            <div class="success-checkmark-stem"></div>
+            <div class="success-checkmark-kick"></div>
+          </div>
+        </div>
+        <h2 class="modal-heading">Subscription Confirmed!</h2>
+        <p class="modal-subheading">Welcome to the inner circle! You are now a PrimePick <strong id="success-plan-name" class="highlight-text">Pro</strong> member.</p>
+        
+        <div class="success-details-box">
+          <p><strong>Member ID:</strong> <span id="success-member-id">PP-849204</span></p>
+          <p><strong>Transaction Amount:</strong> <span id="success-plan-price">₹99</span></p>
+          <p><strong>Next Renewal Date:</strong> <span id="success-renewal-date">July 4, 2026</span></p>
+          <p>A confirmation email with your invoice has been sent.</p>
+        </div>
+
+        <button type="button" class="success-btn" id="success-done-btn">Start Exploring</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 PrimePick Inc. All rights reserved. Built with premium design values.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
